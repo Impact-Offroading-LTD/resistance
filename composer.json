@@ -1,18 +1,54 @@
 {
     "name": "impact/resistance",
     "description": "Authentication Scaffolding for Impact",
+    "keywords": [
+        "impact",
+        "resistance"
+    ],
+    "homepage": "https://github.com/impact/resistance",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Tek Xylo",
-            "email": "tekxilog@gmail.com"
+            "email": "dirtbikes@impactatv.com",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
     "autoload": {
         "psr-4": {
-            "Impact\\Resistance\\": "src/"
+            "Impact\\Resistance\\": "src"
         }
     },
-    "require": {}
+    "autoload-dev": {
+        "psr-4": {
+            "Impact\\Resistance\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Impact\\Resistance\\ResistanceServiceProvider"
+            ],
+            "aliases": {
+                "Resistance": "Impact\\Resistance\\ResistanceFacade"
+            }
+        }
+    }
 }
