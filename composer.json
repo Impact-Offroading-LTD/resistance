@@ -16,7 +16,10 @@
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.4",
+        "laravel/fortify": "^1.0",
+        "livewire/livewire": "^2.2"
+
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",

@@ -1,4 +1,4 @@
 <?php
 
-Route::get('/login', App\Http\Livewire\Login::class)->name('login');
-Route::get('/register', App\Http\Livewire\Register::class)->name('register');
+Route::get('/login', Impact\Resistance\Http\Livewire\Login::class)->name('login');
+Route::get('/register', Impact\Resistance\Http\Livewire\Register::class)->name('register');
