@@ -45,7 +45,7 @@ class Login extends Component
 
     public function render()
     {
-        return view('auth.livewire.login');
+        return view('resistance::auth.livewire.login')->layout('resistance::layouts.app');
 
     }
 

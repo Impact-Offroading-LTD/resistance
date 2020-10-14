@@ -27,9 +27,9 @@ class ResistanceServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'resistance');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'resistance');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+           //$this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'resistance');
+           $this->loadViewsFrom(__DIR__.'/../resources/views', 'resistance');
+           //$this->loadMigrationsFrom(__DIR__.'/../database/migrations');
            $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {

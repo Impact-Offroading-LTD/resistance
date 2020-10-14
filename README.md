@@ -1,8 +1,10 @@
 # Very short description of the package
 
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://impactatv.com/resistance.png" width="400"></a></p>
+
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/impact/resistance.svg?style=flat-square)](https://packagist.org/packages/impact/resistance)
 [![Build Status](https://img.shields.io/travis/impact/resistance/master.svg?style=flat-square)](https://travis-ci.org/impact/resistance)
-[![Quality Score](https://img.shields.io/scrutinizer/g/impact/resistance.svg?style=flat-square)](https://scrutinizer-ci.com/g/impact/resistance)
 [![Total Downloads](https://img.shields.io/packagist/dt/impact/resistance.svg?style=flat-square)](https://packagist.org/packages/impact/resistance)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.

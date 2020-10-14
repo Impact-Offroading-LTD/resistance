@@ -14,7 +14,7 @@ class Register extends Component
 {
     public function render()
     {
-        return view('auth.livewire.register');
+        return view('resistance::auth.livewire.register')->layout('resistance::layouts.app');
 
     }
 
