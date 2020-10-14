@@ -13,7 +13,7 @@ class ResistanceServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //$this->app->make('impact\resistance\ResistanceController');
     }
 
     /**
@@ -23,6 +23,9 @@ class ResistanceServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
+        $this->loadViewsFrom(__DIR__.'/views', 'resistance');
+
     }
 }
