@@ -1,7 +1,6 @@
 {
     "name": "impact/resistance",
     "description": "Authentication Scaffolding for Impact",
-    "type": "project",
     "license": "MIT",
     "authors": [
         {
