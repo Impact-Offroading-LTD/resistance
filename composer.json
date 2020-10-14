@@ -1,0 +1,19 @@
+{
+    "name": "impact/resistance",
+    "description": "Authentication Scaffolding for Impact",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tek Xylo",
+            "email": "tekxilog@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Impact\\Resistance\\": "src/"
+        }
+    },
+    "require": {}
+}
