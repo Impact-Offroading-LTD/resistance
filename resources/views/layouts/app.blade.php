@@ -8,18 +8,31 @@
         <title>Impact</title>
         <!-- Styles -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://impactatv.com/fontawesome/css/all.css">
-        <link rel="stylesheet" href="https://impactatv.com/css/dark-mode.css">
+        <link rel="stylesheet" href="/fontawesome/css/all.css">
+        <!--<link rel="stylesheet" href="https://impactatv.com/css/dark-mode.css">-->
+        <style>
+        .user-avatar{
+            -webkit-border-radius: 60px;
+            -webkit-background-clip: padding-box;
+            -moz-border-radius: 60px;
+            -moz-background-clip: padding;
+            border-radius: 60px;
+            background-clip: padding-box;
+
+            background-size: cover;
+            background-position: center center;
+        }
+        </style>
     </head>
 
 
 <body>
 
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-dark bg-impact shadow">
+    <nav class="navbar navbar-expand-md navbar-light bg-impact shadow">
         <div class="container">
            <a class="navbar-brand" href="{{ url('/') }}">
-           <img src="https://impactatv.com/impact-w.png" alt="Italian Trulli" style="width: 200px;"><br>
+           <img src="https://impactatv.com/impact.png" alt="Italian Trulli" style="width: 200px;"><br>
            </a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
            <span class="navbar-toggler-icon"></span>
@@ -28,16 +41,16 @@
               <!-- Left Side Of Navbar -->
               <ul class="navbar-nav mr-auto">
               <li class="nav-item px-2">
-                    <a class="nav-link" href="/dashboard" style="color:#fff;"><i class="far fa-home" style="margin-right:5px;"></i> {{ __('Dashboard') }}</a>
+                    <a class="nav-link" href="/dashboard"><i class="far fa-home" style="margin-right:5px;"></i> {{ __('Dashboard') }}</a>
                  </li>
                  <li class="nav-item px-2">
-                    <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-calendar-alt" style="margin-right:5px;"></i> {{ __('Events') }}</a>
+                    <a class="nav-link" href="#account/myvehicles"><i class="far fa-calendar-alt" style="margin-right:5px;"></i> {{ __('Events') }}</a>
                  </li>
                  <li class="nav-item px-2">
-                    <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-motorcycle" style="margin-right:5px;"></i> {{ __('Teams') }}</a>
+                    <a class="nav-link" href="#account/myvehicles"><i class="far fa-motorcycle" style="margin-right:5px;"></i> {{ __('Teams') }}</a>
                  </li>
                  <li class="nav-item px-2">
-                    <a class="nav-link" href="#account/myvehicles" style="color:#fff;"><i class="far fa-globe-americas" style="margin-right:5px;"></i> {{ __('Impact Network') }}</a>
+                    <a class="nav-link" href="#account/myvehicles"><i class="far fa-globe-americas" style="margin-right:5px;"></i> {{ __('Impact Network') }}</a>
                  </li>
               </ul>
               <!-- Right Side Of Navbar -->
