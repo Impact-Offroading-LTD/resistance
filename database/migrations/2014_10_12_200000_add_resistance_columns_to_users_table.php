@@ -40,23 +40,6 @@ class CreateUsersTable extends Migration
                     ->default(NULL)
                     ->nullable();
 
-
-        });
-
-        Schema::create('users', function (Blueprint $table) {
-            $table->uuid('id');
-            $table->primary('id');
-            $table->string('name');
-            $table->string('tag')->nullable()->default(NULL);
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('fav_trail')->nullable()->default(NULL); //IMPACT
-            $table->string('fav_vehicle')->nullable()->default(NULL); //IMPACT
-            $table->string('avatar_url')->nullable()->default('/default_pfp.png'); //IMPACT
-            $table->rememberToken();
-            $table->softDeletes()->nullable()->default(NULL);
-            $table->timestamps();
         });
     }
 
@@ -67,6 +50,8 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('role', 'fav_trail', 'fav_vehicle', 'avatar_url');
+        });
     }
 }
